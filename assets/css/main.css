@@ -4,6 +4,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px 0;
     background-color: #fff;
+    z-index: 9;
 }
 
 .header .logo {
@@ -49,12 +50,31 @@
     color: #fff;
 }
 
+.bars-menu {
+    display: none;
+}
+
 @media(max-width:992px) {
     .nav {
         display: none;
     }
+
+    .bars-menu {
+        display: inline-block;
+        order: 1;
+    }
+
+    .auth {
+        display: none;
+    }
 }
 
+@media(max-width:400px) {
+    .logo {
+        display: none;
+    }
+
+}
 
 .testimonials {
     text-align: center;
@@ -69,6 +89,7 @@
 
 .testimonials .row {
     gap: 40px;
+    flex-direction: row;
 }
 
 .testimonial {
@@ -76,13 +97,19 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
-    width: calc((100% - 40px) / 2);
+    /*    width: calc((100% - 40px) / 2);   */
+    flex-basis: 400px;
     align-items: flex-start;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     padding: 20px;
     position: relative;
+    flex-grow: 1;
 }
-.testimonial:after{
+
+
+
+
+.testimonial:after {
     content: '';
     border-top: 40px solid rgb(228, 226, 226);
     border-left: 40px solid transparent;
@@ -130,10 +157,21 @@
     color: #646464;
 }
 
+
 .testimonial blockquote q {
     display: inline-block;
     padding: 0 10px;
 }
+
+/*@media (max-width:992px) {
+    .testimonial {
+        width: 100%;
+    }
+
+    .testimonial blockquote p {
+        font-size: 14px;
+    }
+}*/
 
 .footer {
     background-color: #393E46;
@@ -149,16 +187,15 @@
     gap: 40px;
 }
 
-.footer .footer-left-side,
-.footer .footer-right-side {
-    width: calc((100% - 40px) /2);
-}
+
 
 .footer-left-side {
     display: flex;
     flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
+    flex-basis: 400px;
+    flex-grow: 1;
 }
 
 .footer .footer-left-side .logo {
@@ -196,6 +233,11 @@
     box-sizing: content-box;
 }
 
+
+.footer-right-side {
+    flex-grow: 1;
+}
+
 .footer-right-side .row {
     justify-content: space-evenly;
     align-items: flex-start;
@@ -213,4 +255,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 6px;
+}
+
+@media (max-width:400px) {
+    .footer-left-side {
+        text-align: center;
+        align-items: center;
+    }
 }
