@@ -6,13 +6,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --mainFont:"Poppins",sans-serif;
-    --subFont:"Inter", sans-serif;
-    --mainColor:#545BE8;
+
+:root {
+    --mainFont: "Poppins", sans-serif;
+    --subFont: "Inter", sans-serif;
+    --mainColor: #545BE8;
 }
-body{
-    font-family: var(--mainFont) ;
+
+body {
+    font-family: var(--mainFont);
 }
 
 .container {
@@ -36,6 +38,7 @@ a {
 ul {
     list-style: none;
 }
-.active{
+
+.active {
     font-weight: 900;
 }

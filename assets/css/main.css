@@ -73,7 +73,84 @@
     .logo {
         display: none;
     }
+}
 
+.courses {
+    padding: 40px 0;
+}
+
+.courses .row {
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.course-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+    gap: 20px;
+}
+
+.course {
+    width: calc((100% - 20px) / 2);
+    box-shadow: 0px 7.437575340278996px 7.437575340278996px rgba(0, 0, 0, 0.05);
+}
+
+.course-card {
+    position: relative;
+}
+
+.course-details {
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.course-details .row {
+    justify-content: space-around;
+}
+.course-details .row:first-of-type span{
+color: var(--mainColor);}
+
+.course-details .row:last-of-type {
+    justify-content: flex-start;
+}
+
+.course-description {
+    width: calc((100% - 30px) / 2);
+}
+
+.course-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+
+
+}
+
+.course-info span:first-of-type {
+    background-color: var(--mainColor);
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.course-info span:last-of-type {
+    color: #fff;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.course-card img {
+    filter: brightness(70%);
 }
 
 .testimonials {
