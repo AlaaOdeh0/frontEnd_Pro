@@ -32,6 +32,7 @@
     flex-wrap: wrap;
 }
 
+
 .header .auth a {
     font-family: var(--subFont);
     padding: 10px 30px;
@@ -107,11 +108,27 @@
     flex-wrap: wrap;
 }
 
+.desc {
+    padding: 0 80px 0 80px;
+}
+
+
+.lastdesc {
+    border: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    color: #fff;
+    border-radius: 2px;
+    padding: 3px 25px;
+    margin-top: 20px;
+}
+
 .course-details .row {
     justify-content: space-around;
 }
-.course-details .row:first-of-type span{
-color: var(--mainColor);}
+
+.course-details .row:first-of-type span {
+    color: var(--mainColor);
+}
 
 .course-details .row:last-of-type {
     justify-content: flex-start;
@@ -340,3 +357,228 @@ color: var(--mainColor);}
         align-items: center;
     }
 }
+
+
+.course-section {
+    font-family: Arial, sans-serif;
+    background-color: #2e51a2;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+
+.course-content {
+    flex: 1;
+    padding: 500px;
+}
+
+
+
+.course-content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.course-image {
+    flex: 1;
+    position: relative;
+}
+
+.course-content h2 {
+    color: #ffd700;
+    margin: 0;
+}
+
+.course-content h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.course-content p {
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+.course-stats {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.course-stats .stat {
+    text-align: center;
+}
+
+
+.course-image img {
+    padding: 200px;
+    /*
+    width: 60%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;*/
+}
+
+.what-we-give-section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: #dddada;
+    border-radius: 10px;
+    width: 98%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    height: 500px;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content h2 {
+    color: #5063f0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.content p {
+    font-size: 15px;
+    color: #777;
+}
+
+.cards {
+    flex: 2;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #5063f0;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card .icon {
+    margin-bottom: 20px;
+}
+
+.card .icon i {
+    width: 50px;
+    height: 50px;
+}
+
+.card h3 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 15px;
+    color: #e0e0e0;
+}
+
+.find-course-section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 500px;
+    width: 100%;
+    padding: 60px;
+
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content .subtitle {
+    color: #5063f0;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.text-content h1 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.text-content .highlight {
+    color: #5063f0;
+}
+
+.text-content .description {
+    font-size: 15px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.buttons .register {
+    background-color: #5063f0;
+    color: #fff;
+}
+
+.buttons .play-video {
+    background-color: #cbbf79;
+    color: #fff;
+}
+
+.image-content {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-content img {
+    width: 60%;
+    height: auto;
+}
+
+/*
+
+
+
+
+
+
+}*/
